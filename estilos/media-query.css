@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+
+@media screen and (min-width: 300px){
+    div#formulario > p {
+        font-size: .9em;
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
@@ -17,6 +24,11 @@
     section#login > div#formulario {
         float: right;
         width: 70%;
+        
+    }
+    div#formulario > p {
+        font-size: 1.2em;
+        padding: 10px;
     }
     form > div.campo > input[type=submit] {
         display: block;
@@ -48,6 +60,10 @@
 @media screen and (min-width: 992px) {
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+    div#formulario > p {
+        font-size: 1.2em;
+        padding: 10px;
     }
     section#login {
         width: 990px;
