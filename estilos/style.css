@@ -48,16 +48,27 @@ Paleta de Cores:
     div#formulario > h1 {
         text-align: center;
         margin-bottom: 10px;
-        padding: 10px
+        padding-top: 10px;
     }
     div#formulario > p {
         font-size: 1.2em;
         padding: 10px;
     }
-    div#formulario > form {
+    div#formulario > form > div.campo {
+        background-color: #5f2c82;
+        display: block;
+        height: 40px;
+        width: 100%;
+        border-radius: 5px;
+        margin: 5px 0px;
+    }
+    form {
         padding: 10px;
     }
-    form > div.campo > input[type=submit] {
+    div.campo > label {
+        display: none;
+    }
+    form > div.subs > input[type=submit] {
         display: block;
         font-size: 1em;
         width: 100%;
@@ -68,10 +79,10 @@ Paleta de Cores:
         border: none;
         border-radius: 5px;
     }
-    form > div.campo > input[type=submit]:hover {
+    form > div.subs > input[type=submit]:hover {
         background-color: #2d6462;
     }
-    form > div.campo > a.botao {
+    form > div.subs > a.botao {
         display: block;
         text-align: center;
         font-size: 1em;
